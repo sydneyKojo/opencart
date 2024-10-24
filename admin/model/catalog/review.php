@@ -89,6 +89,7 @@ class Review extends \Opencart\System\Engine\Model {
 		}
 	}
 
+	
 	/**
 	 * @param array $data
 	 *

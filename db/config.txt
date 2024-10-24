@@ -1,0 +1,27 @@
+Database Setup Instructions
+
+1. Create the Database:
+   - Log into phpMyAdmin or your MySQL client.
+   - Run this command to create the database:
+     ```sql
+     CREATE DATABASE opencart;
+     ```
+
+2. Import the SQL File:
+   - In phpMyAdmin, select the `opencart` database.
+   - Go to the Import tab.
+   - Choose the SQL file from the `db` folder and click Go.
+
+3. Create the User:
+   - Run these commands to create a user with the credentials `oc_user/oc_user`:
+     ```sql
+     CREATE USER 'oc_user'@'localhost' IDENTIFIED BY 'oc_user';
+     GRANT ALL PRIVILEGES ON opencart.* TO 'oc_user'@'localhost';
+     FLUSH PRIVILEGES;
+     ```
+
+Admin credentials - 
+Username - admin
+Password - password
+
+

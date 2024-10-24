@@ -18,6 +18,7 @@ class Review extends \Opencart\System\Engine\Model {
 		return $this->db->getLastId();
 	}
 
+	
 	/**
 	 * @param int $product_id
 	 * @param int $start
